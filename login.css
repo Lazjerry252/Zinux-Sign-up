@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-image: url(Pictures/purple-background.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(192, 0, 0);
+  height: 350px;
+  width: 50%;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+h2 {
+  color: white;
+  font-family: Arial;
+  font-weight: 900;
+}
+
+input {
+  background-color: rgb(121, 44, 44);
+  color: white;
+  height: 100px;
+  font-size: 20px;
+  border-style: solid;
+  border-color: goldenrod;
+  border-width: 2px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  font-family: Impact;
+}
+
+.forget {
+  color: white;
+}
+
+.btn-container, .link-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-btn {
+  height: 40px;
+  width: 60%;
+  background-color: green;
+  color: white;
+  border: none;
+  font-weight: 900;
+}
+
+.login-btn:active {
+  opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+  .main {
+    width: 80%;
+  }
+}
